@@ -1,7 +1,7 @@
 {
-  "name": "drmarychammas",
+  "name": "drcheblazar",
   "version": "1.0.0",
-  "description": "Dr. Mary Chammas - Breast Cancer Awareness Portal",
+  "description": "Dr. Chebl Azar - Breast Cancer Awareness Portal",
   "main": "index.html",
   "scripts": {
     "dev": "vercel dev",
@@ -15,6 +15,6 @@
     "genetic-testing",
     "oncology"
   ],
-  "author": "Dr. Mary Chammas",
+  "author": "Dr. Chebl Azar",
   "license": "MIT"
 }

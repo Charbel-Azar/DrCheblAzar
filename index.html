@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Breast Cancer Awareness Month Portal | Dr. Mary Chammas</title>
+    <meta name="description" content="Early detection saves lives. Prevention starts today. October is Breast Cancer Awareness Month. Learn how to protect your health, when to get screened, and which risk factors you can change.">
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Pink_ribbon.svg/32px-Pink_ribbon.svg.png" sizes="32x32" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+    
+    <link rel="stylesheet" href="/assets/css/breastcancer.css">
+    <script src="/assets/js/analytics.js"></script>
+    <script src="/assets/js/translations.js"></script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+      <a href="#" class="brand-link" aria-label="Dr. Mary Chammas home">
+        <img src="https://www.veritasint.com/wp-content/uploads/2025/05/VeritasFZ-1.png" alt="Dr. Mary Chammas icon" class="brand-icon" />
+      </a>
+      
+      <!-- Language Selector -->
+      <div class="language-selector">
+        <div class="selected-text" data-translate="language_selector">Language</div>
+        <div class="dropdown">
+          <div class="dropdown-option" onclick="changeLanguage('en')" data-translate="english">English</div>
+          <div class="dropdown-option" onclick="changeLanguage('ar')" data-translate="arabic">العربية</div>
+          <div class="dropdown-option" onclick="changeLanguage('fr')" data-translate="french">Français</div>
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- ===== HERO ===== -->
+    <header class="hero" role="banner">
+        <div class="hero-inner container">
+            <span class="badge" data-translate="breastcancer_badge"><i class="fa-solid fa-ribbon"></i> Breast Cancer Awareness Month Portal</span>
+            <h1 data-translate="breastcancer_hero_title_main">Early Detection Saves Lives. Prevention Starts Today.</h1>
+            <p class="sub" data-translate="breastcancer_hero_subtitle_main">October is Breast Cancer Awareness Month. Learn how to protect your health, when to get screened, and which risk factors you can change.</p>
+            <div class="cta-row">
+                <a href="#age-guide" class="btn btn-primary"><i class="fa-solid fa-list-check"></i> <span data-translate="see_your_plan">See Your Plan</span></a>
+                <a href="#" id="waHero" class="btn btn-wa"><i class="fa-brands fa-whatsapp"></i> <span data-translate="whatsapp_clinic">WhatsApp the Clinic</span></a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container" role="main">
+        <!-- ===== Doctor section ===== -->
+        <section id="doctor" aria-labelledby="doctor-title">
+            <h2 id="doctor-title" data-translate="clinical_support_title">Clinical Support</h2>
+            <p class="lead" data-translate="clinical_support_lead">This campaign is supported by Dr. Mary Chammas, Consultant in Oncology & Women's Health. Dr. Chammas promotes evidence-based prevention and early detection, helping patients understand screening schedules, lifestyle steps, and the role of genetics.</p>
+            <div class="grid cols-2">
+                <div class="card">
+                    <img id="doctor-photo" src="/assets/images/breastcancer/ghosn.jpg" alt="Dr. Mary Chammas portrait" loading="lazy" style="width:100%; border-radius:12px; max-height:340px; object-fit:cover">
+                </div>
+                <div class="card">
+                    <h3 id="doctor-name" style="margin-top:0" data-translate="doctor_name">Dr. Mary Chammas</h3>
+                    <p data-translate="doctor_description">Consultant in Oncology & Women's Health focused on evidence-based prevention and early detection protocols. Specializes in helping patients understand personalized screening schedules, lifestyle interventions, and genetic risk assessment.</p>
+                    <ul>
+                        <li data-translate="doctor_qualification_1">Board-certified in Medical Oncology and Women's Health</li>
+                        <li data-translate="doctor_qualification_2">Evidence-based approach to prevention and screening</li>
+                        <li data-translate="doctor_qualification_3">Personalized risk assessment and genetic counseling coordination</li>
+                        <li data-translate="doctor_qualification_4">Collaborative patient care with multidisciplinary teams</li>
+                    </ul>
+                    <div class="cta-row" style="margin-top:.5rem">
+                        <a href="#" id="waDoctor" class="btn btn-wa"><i class="fa-brands fa-whatsapp"></i> <span data-translate="whatsapp_consultation">WhatsApp for Consultation</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Age-by-age guide ===== -->
+        <section id="age-guide" aria-labelledby="age-title">
+            <h2 id="age-title">Evidence-Based Plan by Age Range</h2>
+            <p class="lead">Screening guidelines vary by country and personal risk. These evidence-based recommendations help guide your preventive care decisions.</p>
+            <div class="grid cols-4">
+                <div class="card">
+                    <h3>Ages 20s–30s</h3>
+                    <ul>
+                        <li>Know your normal: pay attention to breast changes</li>
+                        <li>Adopt healthy habits: stay active, eat well, limit alcohol</li>
+                        <li>If family history is strong, ask about genetic counseling</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Ages 40–49</h3>
+                    <ul>
+                        <li><strong>US (USPSTF 2024):</strong> Mammograms every 2 years starting at 40</li>
+                        <li><strong>ACS:</strong> 40–44 option to start yearly; 45–54 yearly mammograms</li>
+                        <li><strong>UK:</strong> NHS screening starts later; consider earlier if high-risk</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Ages 50–71 (UK)</h3>
+                    <ul>
+                        <li><strong>USPSTF (US):</strong> Mammograms every 2 years</li>
+                        <li><strong>NHS:</strong> Mammograms every 3 years</li>
+                        <li><strong>ACS:</strong> Mammograms every 1–2 years</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Ages 72+</h3>
+                    <ul>
+                        <li>Screening based on health and doctor's advice</li>
+                        <li>Continue lifestyle prevention and regular checkups</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="muted" style="margin-top:.75rem">This information is educational and not a diagnosis. Your clinician will personalize timing and modality.</p>
+        </section>
+
+<section id="awareness-image" aria-labelledby="awareness-image-title">
+  <h2 id="awareness-image-title">Know Your Normal</h2>
+  <div class="card" style="padding:0; display:flex; justify-content:center; align-items:center;">
+    <!-- Vertical image: constrained width, no cropping -->
+    <img 
+      src="/assets/images/breastcancer/breastcancer2.jpg" 
+      alt="Breast cancer awareness"
+      loading="lazy"
+      style="display:block; width:100%; max-width:520px; height:auto; object-fit:contain; border-radius:12px;" />
+  </div>
+</section>
+        <!-- ===== General Prevention Tips ===== -->
+        <section aria-labelledby="prevention-title">
+            <h2 id="prevention-title">Evidence-Based General Prevention Tips</h2>
+            <p class="lead">Lifestyle modifications supported by clinical research from ACS, USPSTF, WCRF, NHS, and WHO.</p>
+            <div class="grid cols-3">
+                <div class="card">
+                    <h3>Stay Active</h3>
+                    <p>150 minutes of moderate exercise weekly. Physical activity reduces risk through hormonal modulation and immune system enhancement.</p>
+                </div>
+                <div class="card">
+                    <h3>Maintain Healthy Weight</h3>
+                    <p>Especially important after menopause. Excess weight increases estrogen production and inflammatory markers.</p>
+                </div>
+                <div class="card">
+                    <h3>Limit Alcohol</h3>
+                    <p>Less is better. Each daily alcoholic drink increases breast cancer risk by approximately 7-10%.</p>
+                </div>
+                <div class="card">
+                    <h3>Plant-Rich Diet</h3>
+                    <p>Emphasize fruits, vegetables, and whole grains. Antioxidants and phytonutrients provide protective mechanisms.</p>
+                </div>
+                <div class="card">
+                    <h3>Breastfeed if Possible</h3>
+                    <p>Extended breastfeeding duration correlates with reduced risk through hormonal and cellular protection.</p>
+                </div>
+                <div class="card">
+                    <h3>Discuss HRT Carefully</h3>
+                    <p>Understand risks and benefits. Combined estrogen-progestin therapy increases risk; explore alternatives.</p>
+                </div>
+            </div>
+            <p class="muted" style="text-align:center; margin-top:1rem">Sources: ACS, USPSTF, WCRF, NHS, WHO</p>
+        </section>
+<!-- INSERT this block between the "Evidence-Based General Prevention Tips" section and the "When to Seek Care Immediately" section inside <main class="container"> -->
+
+<section id="awareness-image" aria-labelledby="awareness-image-title">
+  <h2 id="awareness-image-title">Awareness at a Glance</h2>
+  <div class="card" style="padding:0; display:flex; justify-content:center; align-items:center;">
+    <!-- Vertical image: constrained width, no cropping -->
+    <img 
+      src="/assets/images/breastcancer/breastcancer.jpg" 
+      alt="Breast cancer awareness"
+      loading="lazy"
+      style="display:block; width:100%; max-width:520px; height:auto; object-fit:contain; border-radius:12px;" />
+  </div>
+</section>
+        <!-- ===== When to Seek Care ===== -->
+        <section aria-labelledby="warning-title">
+            <h2 id="warning-title">When to Seek Care Immediately</h2>
+            <p class="lead">Any persistent changes warrant clinical evaluation according to CDC guidelines.</p>
+            <div class="grid cols-2">
+                <div class="card" style="border-left: 4px solid #ef4444;">
+                    <h3 style="color: #dc2626;">New Lump or Change</h3>
+                    <p>Any new lump or change lasting more than 2–4 weeks requires immediate evaluation.</p>
+                </div>
+                <div class="card" style="border-left: 4px solid #ef4444;">
+                    <h3 style="color: #dc2626;">Nipple Discharge or Skin Changes</h3>
+                    <p>Bloody nipple discharge or skin changes not improving within 2-4 weeks.</p>
+                </div>
+                <div class="card" style="border-left: 4px solid #ef4444;">
+                    <h3 style="color: #dc2626;">Concerning Symptoms</h3>
+                    <p>Any symptoms plus feeling unwell or worried — don't wait. Trust your instincts.</p>
+                </div>
+                <div class="card" style="border-left: 4px solid #ef4444;">
+                    <h3 style="color: #dc2626;">Systemic Symptoms</h3>
+                    <p>Any breast changes accompanied by unexplained fatigue, weight loss, or general malaise.</p>
+                </div>
+            </div>
+            <p class="muted" style="text-align:center; margin-top:1rem">Source: CDC</p>
+        </section>
+
+        <!-- ===== Imaging Partners ===== -->
+        <section aria-labelledby="partners-title">
+            <h2 id="partners-title">Imaging Partners</h2>
+            <p class="lead">Book your mammogram or breast ultrasound at one of our partner centers. Each center has WhatsApp booking for easy scheduling and support.</p>
+            <div class="partners" id="partners"></div>
+        </section>
+
+        <!-- ===== Genetic Testing & New Tools ===== -->
+        <section class="card" aria-labelledby="genetics-title" style="background:linear-gradient(180deg,#fff,#fff0fa); border:1px solid #ffe4f3">
+            <h2 id="genetics-title">Genetic Testing & New Tools</h2>
+            <div class="grid cols-2">
+                <div>
+                    <h3>BRCA1/2 Testing</h3>
+                    <p>Recommended for strong family history of breast/ovarian cancer. Genetic counseling is the essential first step.</p>
+                </div>
+                <div>
+                    <h3>Polygenic Risk Scores (PRS)</h3>
+                    <p>Combine multiple genetic markers to refine risk assessment. New guidelines (2025) support PRS in clinical risk evaluation.</p>
+                </div>
+            </div>
+            <p class="muted">Best used with validated models like CanRisk or Tyrer–Cuzick. Genetic counseling provides proper interpretation and clinical context.</p>
+            <div class="cta-row" style="margin-top:1rem">
+                <a href="#" class="btn btn-primary">Learn about Genetic Testing</a>
+                <a href="#" id="waGen" class="btn btn-wa"><i class="fa-brands fa-whatsapp"></i> Ask about Genetic Testing</a>
+            </div>
+            <p class="muted" style="text-align:center; margin-top:1rem">Sources: NHS, ACS, USPSTF, MDPI 2025 PRS Guidance, Lancet Oncology</p>
+        </section>
+
+        <!-- ===== FAQs ===== -->
+        <section aria-labelledby="faq-title">
+            <h2 id="faq-title">Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        When should I start mammograms?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p><strong>UK:</strong> From 50 (every 3 years). <strong>US:</strong> From 40 (every 2 years). <strong>High-risk:</strong> Discuss earlier screening with your healthcare provider.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Do self-exams help?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Evidence is mixed on formal self-examination, but knowing your normal breast characteristics helps detect changes early. Report any persistent changes to your healthcare provider.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Can lifestyle really reduce my risk?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes — physical activity, maintaining healthy weight, limiting alcohol, and breastfeeding all significantly lower risk through various biological mechanisms.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What if I have a family history?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>You may need earlier or more frequent screening. Discuss genetic counseling and testing with your healthcare provider to assess your personalized risk.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Myth vs Fact ===== -->
+        <section aria-labelledby="myth-fact-title">
+            <h2 id="myth-fact-title">Myth vs Fact</h2>
+            <p class="lead">Separating evidence-based facts from common misconceptions.</p>
+            <div class="myth-fact-container">
+                <div class="myth-card">
+                    <h4><i class="fas fa-times"></i> MYTH</h4>
+                    <p>Only women with family history get breast cancer.</p>
+                </div>
+                <div class="fact-card">
+                    <h4><i class="fas fa-check"></i> FACT</h4>
+                    <p>Most breast cancer cases occur in women without family history. Environmental and lifestyle factors play significant roles.</p>
+                </div>
+                
+                <div class="myth-card">
+                    <h4><i class="fas fa-times"></i> MYTH</h4>
+                    <p>Mammograms cause cancer from radiation exposure.</p>
+                </div>
+                <div class="fact-card">
+                    <h4><i class="fas fa-check"></i> FACT</h4>
+                    <p>Modern mammograms use low-dose X-rays. The proven benefits of early detection far outweigh minimal radiation risks.</p>
+                </div>
+            </div>
+            <p class="muted" style="text-align:center; margin-top:1rem">Sources: NHS, ACS, WHO</p>
+        </section>
+    </main>
+
+    <!-- ===== Floating actions ===== -->
+    <a href="#" id="floatShare" class="float-share" aria-label="Share this page"><i class="fa-solid fa-share-nodes"></i></a>
+    <a href="#" id="floatWA" class="float-wa" aria-label="Chat on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+    
+    <div id="sharePanel" class="share-panel" role="dialog" aria-modal="true" aria-hidden="true">
+        <button class="share-option" data-action="whatsapp"><i class="fa-brands fa-whatsapp"></i><span>Share via WhatsApp</span></button>
+        <button class="share-option" data-action="telegram"><i class="fa-brands fa-telegram"></i><span>Telegram</span></button>
+        <button class="share-option" data-action="facebook"><i class="fa-brands fa-facebook-f"></i><span>Facebook</span></button>
+        <button class="share-option" data-action="copy"><i class="fa-solid fa-link"></i><span>Copy link</span></button>
+    </div>
+    
+    <div id="toast" class="toast" role="status" aria-live="polite">Link copied</div>
+
+    <!-- ===== Footer compliance ===== -->
+    <footer class="compliance" role="contentinfo">
+        <div class="container" style="padding:1.25rem">
+            <div style="display:flex; gap:1rem; align-items:flex-start; justify-content:space-between; flex-wrap:wrap">
+                <p style="margin:0; max-width:900px">
+                    <strong>Important:</strong> This page provides general educational information for Breast Cancer Awareness Month. It does not diagnose disease and does not replace professional medical advice. Screening timing and modality should be decided with your healthcare professional.
+                </p>
+                <a href="https://www.veritasint.com/privacy-policy/" target="_blank" rel="noopener" style="color:#fff">Privacy</a>
+            </div>
+            <div class="credits" style="margin-top:.6rem">
+                Images: Pink ribbon (Wikimedia Commons), Mammography illustration (NCI Public Domain).
+            </div>
+        </div>
+    </footer>
+
+    <script src="/assets/js/breastcancer.js"></script>
+    <script src="/assets/js/animations.js"></script>
+    
+    <script>
+    // Language dropdown functionality
+    document.addEventListener('DOMContentLoaded', function() {
+        const languageSelector = document.querySelector('.language-selector');
+        const selectedText = languageSelector.querySelector('.selected-text');
+        
+        // Toggle dropdown on click
+        selectedText.addEventListener('click', function(e) {
+            e.stopPropagation();
+            languageSelector.classList.toggle('active');
+        });
+        
+        // Close dropdown when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!languageSelector.contains(e.target)) {
+                languageSelector.classList.remove('active');
+            }
+        });
+        
+        // Close dropdown when selecting a language
+        const dropdownOptions = languageSelector.querySelectorAll('.dropdown-option');
+        dropdownOptions.forEach(option => {
+            option.addEventListener('click', function() {
+                languageSelector.classList.remove('active');
+            });
+        });
+    });
+    </script>
+</body>
+</html>

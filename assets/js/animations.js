@@ -73,17 +73,7 @@
                 transform: translateY(0);
             }
             
-            /* Hero text animation */
-            .hero-text {
-                opacity: 0;
-                transform: translateY(50px);
-                transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
-            }
-            
-            .hero-text.animate {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            /* Hero text animation - removed to prevent conflict with CSS animations */
             
             /* Floating animation for ribbons */
             .floating {
@@ -109,24 +99,7 @@
                 box-shadow: 0 10px 30px rgba(255, 77, 166, 0.3);
             }
             
-            /* Gradient animation for hero */
-            .hero-gradient {
-                background: linear-gradient(135deg, #ff77c3 0%, #a7b0f5 50%, #ff8bc8 100%);
-                background-size: 200% 200%;
-                animation: gradientShift 8s ease infinite;
-            }
-            
-            @keyframes gradientShift {
-                0% {
-                    background-position: 0% 50%;
-                }
-                50% {
-                    background-position: 100% 50%;
-                }
-                100% {
-                    background-position: 0% 50%;
-                }
-            }
+            /* Gradient animation removed to prevent conflict with existing CSS */
         </style>
     `;
 
@@ -157,34 +130,9 @@
 
     // Apply animations to elements
     function initAnimations() {
-        // Hero section
-        const heroTitle = document.querySelector('.hero h1');
-        const heroSubtitle = document.querySelector('.hero p.sub');
-        const heroBadge = document.querySelector('.hero .badge');
-        const heroButtons = document.querySelector('.hero .cta-row');
-        
-        if (heroTitle) {
-            heroTitle.classList.add('hero-text');
-            setTimeout(() => heroTitle.classList.add('animate'), 200);
-        }
-        if (heroSubtitle) {
-            heroSubtitle.classList.add('hero-text');
-            setTimeout(() => heroSubtitle.classList.add('animate'), 400);
-        }
-        if (heroBadge) {
-            heroBadge.classList.add('hero-text');
-            setTimeout(() => heroBadge.classList.add('animate'), 600);
-        }
-        if (heroButtons) {
-            heroButtons.classList.add('hero-text');
-            setTimeout(() => heroButtons.classList.add('animate'), 800);
-        }
+        // Hero section - removed JavaScript animations to prevent conflict with CSS animations
 
-        // Add gradient animation to hero
-        const hero = document.querySelector('.hero');
-        if (hero) {
-            hero.classList.add('hero-gradient');
-        }
+        // Hero gradient animation removed to prevent conflict with existing CSS animations
 
         // Doctor section - more subtle animation
         const doctorSection = document.querySelector('#doctor');

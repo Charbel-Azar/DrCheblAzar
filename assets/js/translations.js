@@ -821,12 +821,27 @@ let currentLanguage = 'en';
 function changeLanguage(lang) {
     currentLanguage = lang;
     
-    // Update all translatable elements
+    // Update all translatable elements (excluding language selector)
     const elements = document.querySelectorAll('[data-translate]');
     elements.forEach(element => {
+        // Skip language selector elements
+        if (element.closest('.language-selector')) {
+            return;
+        }
+        
         const key = element.getAttribute('data-translate');
         if (translations[lang] && translations[lang][key]) {
+            // Preserve existing classes and styling when updating text
+            const originalClasses = element.className;
+            const originalStyle = element.getAttribute('style');
+            
             element.textContent = translations[lang][key];
+            
+            // Restore classes and styling
+            element.className = originalClasses;
+            if (originalStyle) {
+                element.setAttribute('style', originalStyle);
+            }
         }
     });
     
@@ -839,14 +854,14 @@ function changeLanguage(lang) {
         document.body.classList.remove('rtl');
     }
     
-    // Update language selector display
-    const languageSelector = document.querySelector('.language-selector');
-    if (languageSelector) {
-        const selectedText = languageSelector.querySelector('.selected-text');
-        if (selectedText) {
-            selectedText.textContent = translations[lang]['language_selector'];
-        }
-    }
+    // Skip updating language selector display - we want to keep the earth icon and abbreviations
+    // const languageSelector = document.querySelector('.language-selector');
+    // if (languageSelector) {
+    //     const selectedText = languageSelector.querySelector('.selected-text');
+    //     if (selectedText) {
+    //         selectedText.textContent = translations[lang]['language_selector'];
+    //     }
+    // }
     
     // Store language preference
     localStorage.setItem('preferredLanguage', lang);
@@ -866,7 +881,10 @@ function getText(key) {
            : translations['en'][key] || key;
 }
 
-// Initialize when DOM is loaded
+// Initialize when DOM is loaded, but delay to avoid interfering with hero animations
 document.addEventListener('DOMContentLoaded', function() {
-    initializeLanguage();
+    // Delay language initialization to allow hero animations to complete
+    setTimeout(function() {
+        initializeLanguage();
+    }, 1500); // Wait 1.5 seconds for hero animations to complete
 });

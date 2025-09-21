@@ -734,11 +734,6 @@ section{
     padding:2.5rem 1rem
 }
 
-/* Dr recommends section spacing for desktop */
-.dr-recommends-section {
-    margin-top: 35rem;
-}
-
 section h2{
     text-align:center;
     font-size:clamp(1.4rem,3vw,2rem);
@@ -1675,10 +1670,9 @@ section h2{
 
 .tab-content {
     position: relative;
-    overflow: visible;
-    min-height: auto;
+    overflow: hidden;
     width: 100%;
-    height: auto;
+    min-height: 500px;
 }
 
 .tab-panel {
@@ -1691,7 +1685,8 @@ section h2{
     transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     pointer-events: none;
     will-change: transform, opacity;
-    min-height: fit-content;
+    height: auto;
+    min-height: 500px;
 }
 
 .tab-panel.active {
@@ -1938,11 +1933,16 @@ section h2{
     
     .tab-buttons {
         flex-direction: column;
+        gap: 0.5rem;
+        margin-bottom: 1.5rem;
     }
     
     .tab-button {
         min-width: auto;
+        padding: 0.75rem 1rem;
+        font-size: 0.9rem;
     }
+    
     
     .form-option {
         flex-direction: column;
@@ -1965,10 +1965,7 @@ section h2{
         padding: 0.25rem 0;
     }
     
-    /* Dr recommends section spacing for mobile */
-    .dr-recommends-section {
-        margin-top: 60vh;
-    }
+   
 }
 
 @media (max-width: 480px) {
@@ -1979,6 +1976,21 @@ section h2{
     .step-card {
         padding: 1.5rem;
     }
+    
+    .tab-buttons {
+        gap: 0.25rem;
+        margin-bottom: 1rem;
+    }
+    
+    .tab-button {
+        padding: 0.6rem 0.8rem;
+        font-size: 0.8rem;
+    }
+    
+    .tab-button i {
+        font-size: 1rem;
+    }
+    
     
     .risk-content {
         padding: 1rem;
@@ -2003,10 +2015,45 @@ section h2{
     /* Additional mobile adjustments - using default spacing */
     
     .risk-list li {
-        margin-bottom: 0.25rem;
-        padding: 0.125rem 0;
+        margin-bottom: 0.5rem;
+        padding: 0.25rem 0;
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+    
+    .risk-header {
+        padding: 1rem;
+    }
+    
+    .risk-header h3 {
+        font-size: 1.1rem;
+    }
+    
+    .risk-header i {
+        font-size: 1.2rem;
+    }
+    
+    .risk-note {
+        padding: 0.75rem;
+        margin-top: 1rem;
         font-size: 0.85rem;
-        line-height: 1.4;
+    }
+}
+
+/* Extra small screens */
+@media (max-width: 360px) {
+    .tab-button {
+        padding: 0.5rem 0.6rem;
+        font-size: 0.75rem;
+    }
+    
+    .tab-button i {
+        font-size: 0.9rem;
+    }
+    
+    
+    .risk-content {
+        padding: 0.75rem;
     }
     
     .risk-header {
@@ -2017,10 +2064,10 @@ section h2{
         font-size: 1rem;
     }
     
-    .risk-note {
-        padding: 0.75rem;
-        margin-top: 1rem;
+    .risk-list li {
         font-size: 0.85rem;
+        line-height: 1.4;
+        margin-bottom: 0.4rem;
     }
 }
 

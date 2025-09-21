@@ -250,7 +250,7 @@ a{
     display: inline-flex !important;
     align-items: center !important;
     gap: 0.5rem !important;
-    background: rgba(255, 255, 255, 0.9) !important;
+    background: linear-gradient(135deg, rgba(236, 72, 153, 0.15) 0%, rgba(244, 114, 182, 0.1) 50%, rgba(255, 255, 255, 0.2) 100%) !important;
     color: #e91e63 !important;
     padding: 0.6rem 1.2rem !important;
     border-radius: 30px !important;
@@ -258,11 +258,17 @@ a{
     font-weight: 600 !important;
     margin-bottom: 1.5rem !important;
     border: 2px solid #e91e63 !important;
-    backdrop-filter: blur(10px) !important;
-    box-shadow: 0 8px 25px rgba(233, 30, 99, 0.3) !important;
+    backdrop-filter: blur(20px) saturate(180%) !important;
+    -webkit-backdrop-filter: blur(20px) saturate(180%) !important;
+    box-shadow: 
+        0 8px 32px rgba(236, 72, 153, 0.2),
+        0 4px 16px rgba(244, 114, 182, 0.15),
+        inset 0 1px 0 rgba(255, 255, 255, 0.3),
+        inset 0 -1px 0 rgba(236, 72, 153, 0.1) !important;
     animation: badgeFloat 3s ease-in-out infinite !important;
     position: relative !important;
     overflow: hidden !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
 }
 
 .new-hero-badge::before {
@@ -272,8 +278,19 @@ a{
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
     animation: badgeShine 3s ease-in-out infinite;
+}
+
+.new-hero-badge:hover {
+    background: linear-gradient(135deg, rgba(236, 72, 153, 0.25) 0%, rgba(244, 114, 182, 0.2) 50%, rgba(255, 255, 255, 0.3) 100%) !important;
+    border-color: #e91e63 !important;
+    box-shadow: 
+        0 12px 40px rgba(236, 72, 153, 0.3),
+        0 6px 20px rgba(244, 114, 182, 0.25),
+        inset 0 1px 0 rgba(255, 255, 255, 0.4),
+        inset 0 -1px 0 rgba(236, 72, 153, 0.2) !important;
+    transform: translateY(-2px) scale(1.02) !important;
 }
 
 .new-hero-badge i {
@@ -676,11 +693,16 @@ a{
     .new-hero-badge {
         padding: 0.5rem 1rem;
         font-size: 0.8rem;
-        background: rgba(255, 255, 255, 0.9) !important;
+        background: linear-gradient(135deg, rgba(236, 72, 153, 0.15) 0%, rgba(244, 114, 182, 0.1) 50%, rgba(255, 255, 255, 0.2) 100%) !important;
         color: #e91e63 !important;
         border: 2px solid #e91e63 !important;
-        backdrop-filter: blur(10px) !important;
-        box-shadow: 0 4px 15px rgba(233, 30, 99, 0.3) !important;
+        backdrop-filter: blur(20px) saturate(180%) !important;
+        -webkit-backdrop-filter: blur(20px) saturate(180%) !important;
+        box-shadow: 
+            0 6px 24px rgba(236, 72, 153, 0.2),
+            0 3px 12px rgba(244, 114, 182, 0.15),
+            inset 0 1px 0 rgba(255, 255, 255, 0.3),
+            inset 0 -1px 0 rgba(236, 72, 153, 0.1) !important;
     }
     
     .new-hero-title {

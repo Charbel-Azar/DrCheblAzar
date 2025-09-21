@@ -492,10 +492,12 @@
             sendQuestionBtn.addEventListener('click', function() {
                 const question = questionText.value.trim();
                 if (question) {
-                    // Encode the question for URL
-                    const encodedQuestion = encodeURIComponent(question);
-                    // Create WhatsApp URL with the question
-                    const whatsappUrl = `https://wa.me/96179121941?text=${encodedQuestion}`;
+                    // Create the pre-filled message
+                    const fullMessage = `I have a question for Dr. Chebl Azar: ${question}`;
+                    // Encode the full message for URL
+                    const encodedMessage = encodeURIComponent(fullMessage);
+                    // Create WhatsApp URL with the pre-filled message
+                    const whatsappUrl = `https://wa.me/96179121941?text=${encodedMessage}`;
                     // Open WhatsApp
                     window.open(whatsappUrl, '_blank');
                     // Clear the textarea

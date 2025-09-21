@@ -230,7 +230,7 @@ a{
 .new-hero-container {
     position: relative;
     z-index: 2;
-    max-width: 1200px;
+    max-width: 1140px;
     margin: 0 auto;
 }
 
@@ -676,6 +676,11 @@ a{
     .new-hero-badge {
         padding: 0.5rem 1rem;
         font-size: 0.8rem;
+        background: rgba(255, 255, 255, 0.9) !important;
+        color: #e91e63 !important;
+        border: 2px solid #e91e63 !important;
+        backdrop-filter: blur(10px) !important;
+        box-shadow: 0 4px 15px rgba(233, 30, 99, 0.3) !important;
     }
     
     .new-hero-title {
@@ -1883,6 +1888,11 @@ section h2{
 
 .phone-option .option-icon {
     background: var(--medical-green);
+}
+
+.question-option:hover {
+    background: #e0f2fe !important;
+    border-color: #0ea5e9 !important;
 }
 
 .option-content h4 {

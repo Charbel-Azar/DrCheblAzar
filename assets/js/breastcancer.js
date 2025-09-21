@@ -1,6 +1,9 @@
 
-const CLINIC_PHONE = '9613110898';
+const CLINIC_PHONE = '96179121941';
+const GENETIC_PHONE = '9613110898';
 const WA_MESSAGE = 'Hi, I am interested in a consultation.';
+const APPOINTMENT_MESSAGE = 'Hi! I am interested in booking an appointment with dr chebl azar';
+const GENETIC_MESSAGE = "I am dr's chebl azar's patient and I am interested in the polygenic risk score test";
 
 function openWhatsApp(phone, text){
     const n = String(phone);
@@ -21,7 +24,7 @@ function openWhatsApp(phone, text){
 }
 
 // WhatsApp button event listeners
-[['waHero'],['waGen'],['floatWA'],['waDoctor']].forEach(function(pair){
+[['floatWA'],['waDoctor']].forEach(function(pair){
     var id = pair[0];
     var el = document.getElementById(id);
     if(el){
@@ -31,6 +34,24 @@ function openWhatsApp(phone, text){
         });
     }
 });
+
+// Hero appointment booking button (special case)
+var waHeroEl = document.getElementById('waHero');
+if(waHeroEl){
+    waHeroEl.addEventListener('click', function(e){
+        e.preventDefault();
+        openWhatsApp(CLINIC_PHONE, APPOINTMENT_MESSAGE);
+    });
+}
+
+// Genetic testing WhatsApp button (special case)
+var waGenEl = document.getElementById('waGen');
+if(waGenEl){
+    waGenEl.addEventListener('click', function(e){
+        e.preventDefault();
+        openWhatsApp(GENETIC_PHONE, GENETIC_MESSAGE);
+    });
+}
 
 // Share functionality
 (function(){

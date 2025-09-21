@@ -728,6 +728,11 @@ section{
     padding:2.5rem 1rem
 }
 
+/* Dr recommends section spacing for desktop */
+.dr-recommends-section {
+    margin-top: 35rem;
+}
+
 section h2{
     text-align:center;
     font-size:clamp(1.4rem,3vw,2rem);
@@ -760,16 +765,14 @@ section h2{
 
 .card{
     background:#fff;
-    border:1px solid var(--gray-200);
     border-radius:16px;
     padding:1.5rem;
-    box-shadow:0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
     transition:all 0.3s ease;
 }
 
 .card:hover{
     transform:translateY(-2px);
-    box-shadow:0 10px 25px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
+
 }
 
 .card h3{
@@ -1666,9 +1669,10 @@ section h2{
 
 .tab-content {
     position: relative;
-    overflow: hidden;
-    min-height: 400px;
+    overflow: visible;
+    min-height: auto;
     width: 100%;
+    height: auto;
 }
 
 .tab-panel {
@@ -1681,6 +1685,7 @@ section h2{
     transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     pointer-events: none;
     will-change: transform, opacity;
+    min-height: fit-content;
 }
 
 .tab-panel.active {
@@ -1715,7 +1720,7 @@ section h2{
     background: white;
     border-radius: 12px;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
+    overflow: visible;
 }
 
 .risk-header {
@@ -1725,6 +1730,7 @@ section h2{
     display: flex;
     align-items: center;
     gap: 1rem;
+    border-radius: 12px 12px 0 0;
 }
 
 .risk-header i {
@@ -1830,6 +1836,8 @@ section h2{
     padding: 2rem;
     display: grid;
     gap: 1.5rem;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .form-option {
@@ -1888,6 +1896,23 @@ section h2{
     font-size: 0.95rem;
 }
 
+/* Question Form Styles */
+.question-form {
+    text-align: center;
+}
+
+.question-form textarea {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto 0.5rem auto;
+    display: block;
+}
+
+.question-form button {
+    margin: 0 auto;
+    display: inline-flex;
+}
+
 /* Responsive Design for New Elements */
 @media (max-width: 768px) {
     .step-card {
@@ -1917,6 +1942,22 @@ section h2{
     .option-icon {
         align-self: center;
     }
+    
+    /* Responsive tab content - using default spacing */
+    
+    .risk-content {
+        padding: 1.5rem;
+    }
+    
+    .risk-list li {
+        margin-bottom: 0.75rem;
+        padding: 0.25rem 0;
+    }
+    
+    /* Dr recommends section spacing for mobile */
+    .dr-recommends-section {
+        margin-top: 70vh;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1929,7 +1970,7 @@ section h2{
     }
     
     .risk-content {
-        padding: 1.5rem;
+        padding: 1rem;
     }
     
     .form-header {
@@ -1943,4 +1984,34 @@ section h2{
     .form-option {
         padding: 1rem;
     }
+    
+    .question-form textarea {
+        max-width: 100%;
+    }
+    
+    /* Additional mobile adjustments - using default spacing */
+    
+    .risk-list li {
+        margin-bottom: 0.25rem;
+        padding: 0.125rem 0;
+        font-size: 0.85rem;
+        line-height: 1.4;
+    }
+    
+    .risk-header {
+        padding: 0.75rem;
+    }
+    
+    .risk-header h3 {
+        font-size: 1rem;
+    }
+    
+    .risk-note {
+        padding: 0.75rem;
+        margin-top: 1rem;
+        font-size: 0.85rem;
+    }
 }
+
+/* Simple Section Spacing - Just flow naturally */
+/* Sections now use default spacing and flow one after the other */

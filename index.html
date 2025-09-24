@@ -16,22 +16,10 @@
 
 <body>
     <!-- Navigation -->
-    <nav class="nav">
+    <nav class="nav" style="justify-content: center;">
       <a href="https://drcheblazar.com/" class="brand-link" aria-label="Dr. Chebl Azar home">
         <img src="/assets/images/breastcancer/cheblazar breast clinic.png" alt="Dr. Chebl Azar Clinic" class="brand-icon" />
       </a>
-      
-      <!-- Language Selector -->
-      <div class="language-selector">
-        <div class="selected-text">
-          <i class="fa-solid fa-earth-americas"></i>
-        </div>
-        <div class="dropdown">
-          <div class="dropdown-option" onclick="changeLanguage('en')">EN</div>
-          <div class="dropdown-option" onclick="changeLanguage('fr')">FR</div>
-          <div class="dropdown-option" onclick="changeLanguage('ar')">AR</div>
-        </div>
-      </div>
     </nav>
 
 
@@ -367,31 +355,7 @@
     <script src="/assets/js/animations.js"></script>
     
     <script>
-    // Language dropdown functionality
     document.addEventListener('DOMContentLoaded', function() {
-        const languageSelector = document.querySelector('.language-selector');
-        const selectedText = languageSelector.querySelector('.selected-text');
-        
-        // Toggle dropdown on click
-        selectedText.addEventListener('click', function(e) {
-            e.stopPropagation();
-            languageSelector.classList.toggle('active');
-        });
-        
-        // Close dropdown when clicking outside
-        document.addEventListener('click', function(e) {
-            if (!languageSelector.contains(e.target)) {
-                languageSelector.classList.remove('active');
-            }
-        });
-        
-        // Close dropdown when selecting a language
-        const dropdownOptions = languageSelector.querySelectorAll('.dropdown-option');
-        dropdownOptions.forEach(option => {
-            option.addEventListener('click', function() {
-                languageSelector.classList.remove('active');
-            });
-        });
 
         // Risk tabs functionality with smooth sliding animations
         const tabButtons = document.querySelectorAll('.tab-button');

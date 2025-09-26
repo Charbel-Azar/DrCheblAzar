@@ -16,10 +16,27 @@
 
 <body>
     <!-- Navigation -->
-    <nav class="nav" style="justify-content: center;">
+    <nav class="nav" style="justify-content: space-between; align-items: center;">
       <a href="https://drcheblazar.com/" class="brand-link" aria-label="Dr. Chebl Azar home">
         <img src="/assets/images/breastcancer/cheblazar breast clinic.png" alt="Dr. Chebl Azar Clinic" class="brand-icon" />
       </a>
+      
+      <!-- Language Selector -->
+      <div class="language-selector">
+        <div class="selected-text">
+          <i class="fa-solid fa-globe"></i>
+        </div>
+        <div class="dropdown">
+          <div class="dropdown-item" data-lang="en">
+            <span class="lang-code">EN</span>
+            <span class="lang-name">English</span>
+          </div>
+          <div class="dropdown-item" data-lang="ar">
+            <span class="lang-code">AR</span>
+            <span class="lang-name">العربية</span>
+          </div>
+        </div>
+      </div>
     </nav>
 
 
@@ -30,22 +47,22 @@
                 <div class="new-hero-text">
                     <a href="https://drcheblazar.com/" target="_blank" rel="noopener" class="new-hero-badge" style="text-decoration: none;">
                         <img src="/assets/images/breastcancer/breastcliniclogo.png" alt="Breast Clinic Logo" style="width: 24px; height: 24px;">
-                        <span>The Breast Clinic</span>
+                        <span data-translate="hero_badge">The Breast Clinic</span>
                     </a>
-                    <h1 class="new-hero-title">We're here to support you with your breast health.</h1>
+                    <h1 class="new-hero-title" data-translate="hero_title">We're here to support you with your breast health.</h1>
                     <div class="doctor-quote">
-                        <p class="new-hero-description">"I'm here to empower you with education and support at every step along the way of your breast health journey. My goal is simple: find any risks of breast cancer early. That's why it's so important to follow a routine breast care plan for preventive care."</p>
+                        <p class="new-hero-description" data-translate="hero_description">"I'm here to empower you with education and support at every step along the way of your breast health journey. My goal is simple: find any risks of breast cancer early. That's why it's so important to follow a routine breast care plan for preventive care."</p>
                         <p class="doctor-signature">
                             <a href="https://drcheblazar.com/" target="_blank" rel="noopener" style="color: inherit; text-decoration: none;">
-                                <strong>Dr. Chebl Azar</strong>
+                                <strong data-translate="doctor_name">Dr. Chebl Azar</strong>
                             </a><br>
-                            Breast & Reconstructive Surgeon, The Breast Clinic, Trad Hospital (Beirut)
+                            <span data-translate="doctor_title">Breast & Reconstructive Surgeon, The Breast Clinic, Trad Hospital (Beirut)</span>
                         </p>
                     </div>
                     <div class="new-hero-buttons">
                         <a href="#" id="waHero" class="new-hero-btn new-hero-btn-primary">
                             <i class="fa-solid fa-calendar-check"></i>
-                            <span>Book Your Appointment</span>
+                            <span data-translate="book_appointment">Book Your Appointment</span>
                         </a>
                     </div>
                 </div>
@@ -59,8 +76,8 @@
     <main class="container" role="main">
         <!-- ===== Routine Breast Care 3-Step Plan ===== -->
         <section id="routine-care" aria-labelledby="routine-care-title">
-            <h2 id="routine-care-title">Routine Breast Care 3-Step Plan</h2>
-            <p class="lead">A comprehensive approach to preventive breast care that helps detect any changes early.</p>
+            <h2 id="routine-care-title" data-translate="routine_care_title">Routine Breast Care 3-Step Plan</h2>
+            <p class="lead" data-translate="routine_care_lead">A comprehensive approach to preventive breast care that helps detect any changes early.</p>
             
             <section id="awareness-image" aria-labelledby="awareness-image-title" style="margin: 2rem 0;">
                 <div class="card" style="padding:0; display:flex; justify-content:center; align-items:center;">
@@ -76,19 +93,19 @@
                 <div class="step-card">
                     <div class="step-number">1</div>
                     <div class="step-content">
-                        <h3>Breast Self-Awareness</h3>
-                        <p>The American Cancer Society says that all women should get to know how their breasts normally look and feel. Doing this can help you notice any changes more easily.</p>
-                        <p><strong>Changes to watch for:</strong></p>
+                        <h3 data-translate="step1_title">Breast Self-Awareness</h3>
+                        <p data-translate="step1_desc">The American Cancer Society says that all women should get to know how their breasts normally look and feel. Doing this can help you notice any changes more easily.</p>
+                        <p><strong data-translate="step1_changes">Changes to watch for:</strong></p>
                         <ul class="step-list">
-                            <li><i class="fa-solid fa-circle"></i> Lump</li>
-                            <li><i class="fa-solid fa-circle"></i> Leaky fluid (discharge) other than breastmilk</li>
-                            <li><i class="fa-solid fa-circle"></i> Swelling</li>
-                            <li><i class="fa-solid fa-circle"></i> Skin irritation or dimpling</li>
-                            <li><i class="fa-solid fa-circle"></i> Nipple problems (pain, redness, flaking, or turning inward)</li>
+                            <li><i class="fa-solid fa-circle"></i> <span data-translate="step1_lump">Lump</span></li>
+                            <li><i class="fa-solid fa-circle"></i> <span data-translate="step1_discharge">Leaky fluid (discharge) other than breastmilk</span></li>
+                            <li><i class="fa-solid fa-circle"></i> <span data-translate="step1_swelling">Swelling</span></li>
+                            <li><i class="fa-solid fa-circle"></i> <span data-translate="step1_irritation">Skin irritation or dimpling</span></li>
+                            <li><i class="fa-solid fa-circle"></i> <span data-translate="step1_nipple">Nipple problems (pain, redness, flaking, or turning inward)</span></li>
                         </ul>
                         <div class="step-warning">
                             <i class="fa-solid fa-exclamation-triangle"></i>
-                            <strong>See your healthcare provider right away if you notice any of these changes.</strong>
+                            <strong data-translate="step1_warning">See your healthcare provider right away if you notice any of these changes.</strong>
                         </div>
                     </div>
                 </div>
@@ -96,12 +113,12 @@
                 <div class="step-card">
                     <div class="step-number">2</div>
                     <div class="step-content">
-                        <h3>Clinical Breast Exam (CBE)</h3>
-                        <p>Your physical exam should include a clinical breast exam (CBE) by a healthcare provider or nurse trained to check breast problems.</p>
-                        <p><strong>The American College of Obstetricians and Gynecologists recommends:</strong></p>
+                        <h3 data-translate="step2_title">Clinical Breast Exam (CBE)</h3>
+                        <p data-translate="step2_desc">Your physical exam should include a clinical breast exam (CBE) by a healthcare provider or nurse trained to check breast problems.</p>
+                        <p><strong data-translate="step2_recommendation">The American College of Obstetricians and Gynecologists recommends:</strong></p>
                         <ul class="step-list">
-                            <li><i class="fa-solid fa-check"></i> Between ages 29 and 39, women should have a CBE by a healthcare provider every 1 to 3 years.</li>
-                            <li><i class="fa-solid fa-check"></i> After age 40, women should have a breast exam by a healthcare provider every year.</li>
+                            <li><i class="fa-solid fa-check"></i> <span data-translate="step2_age29_39">Between ages 29 and 39, women should have a CBE by a healthcare provider every 1 to 3 years.</span></li>
+                            <li><i class="fa-solid fa-check"></i> <span data-translate="step2_age40">After age 40, women should have a breast exam by a healthcare provider every year.</span></li>
                         </ul>
                     </div>
                 </div>
@@ -109,13 +126,13 @@
                 <div class="step-card">
                     <div class="step-number">3</div>
                     <div class="step-content">
-                        <h3>Mammogram</h3>
-                        <p>A mammogram is a low-dose X-ray of your breasts. It's the most common imaging test. A mammogram can find cancer or other problems early, before a lump can be felt. It can also help diagnose other breast problems.</p>
+                        <h3 data-translate="step3_title">Mammogram</h3>
+                        <p data-translate="step3_desc">A mammogram is a low-dose X-ray of your breasts. It's the most common imaging test. A mammogram can find cancer or other problems early, before a lump can be felt. It can also help diagnose other breast problems.</p>
                         <div class="step-highlight">
-                            <p><strong>The Lebanese Ministry of Public Health recommends mammograms yearly starting from the age of 40.</strong></p>
+                            <p><strong data-translate="step3_lebanese">The Lebanese Ministry of Public Health recommends mammograms yearly starting from the age of 40.</strong></p>
                         </div>
-                        <p>Talk with your healthcare provider about your own personal risk factors. This will help you decide when to start getting mammograms and how often to have them.</p>
-                        <p>Depending on the level of risk, a breast MRI may also be done along with mammograms.</p>
+                        <p data-translate="step3_risk_factors">Talk with your healthcare provider about your own personal risk factors. This will help you decide when to start getting mammograms and how often to have them.</p>
+                        <p data-translate="step3_mri">Depending on the level of risk, a breast MRI may also be done along with mammograms.</p>
                     </div>
                 </div>
             </div>
@@ -123,8 +140,8 @@
 
         <!-- ===== Personalized Screening Plan ===== -->
         <section id="screening-plan" aria-labelledby="screening-plan-title" class="screening-plan-section">
-            <h2 id="screening-plan-title">Personalized Screening Plan for Breast Cancer that Saves the Most Lives</h2>
-            <p class="lead">The type of screening you have and your screening schedule are based on your personal risk for breast cancer. At the breast clinic, personalized monitoring is provided based on individual risk assessments. This ensures tailored care and surveillance for each patient.</p>
+            <h2 id="screening-plan-title" data-translate="screening_plan_title">Personalized Screening Plan for Breast Cancer that Saves the Most Lives</h2>
+            <p class="lead" data-translate="screening_plan_lead">The type of screening you have and your screening schedule are based on your personal risk for breast cancer. At the breast clinic, personalized monitoring is provided based on individual risk assessments. This ensures tailored care and surveillance for each patient.</p>
             <section id="awareness-image" aria-labelledby="awareness-image-title" style="margin: 2rem 0;">
                 <div class="card" style="padding:0; display:flex; justify-content:center; align-items:center;">
                     <!-- Vertical image: constrained width, no cropping -->
@@ -139,15 +156,15 @@
                 <div class="tab-buttons">
                     <button class="tab-button active" data-tab="average-risk">
                         <i class="fa-solid fa-shield-halved"></i>
-                        Average Risk
+                        <span data-translate="average_risk_title">Average Risk</span>
                     </button>
                     <button class="tab-button" data-tab="intermediate-risk">
                         <i class="fa-solid fa-exclamation-triangle"></i>
-                        Intermediate Risk
+                        <span data-translate="intermediate_risk_title">Intermediate Risk</span>
                     </button>
                     <button class="tab-button" data-tab="high-risk">
                         <i class="fa-solid fa-triangle-exclamation"></i>
-                        High Risk
+                        <span data-translate="high_risk_title">High Risk</span>
                     </button>
                 </div>
                 
@@ -156,16 +173,16 @@
                         <div class="risk-card" style="box-shadow: 0 4px 12px rgba(233, 30, 99, 0.15); padding-bottom: 2rem;">
                             <div class="risk-header">
                                 <i class="fa-solid fa-shield-halved"></i>
-                                <h3>Average Risk</h3>
+                                <h3 data-translate="average_risk_title">Average Risk</h3>
                             </div>
                             <div class="risk-content">
                                 <ul class="risk-list">
-                                    <li><i class="fa-solid fa-check"></i> Starting at age 20, become familiar with how your breasts look and feel. Knowing your breasts will help you notice changes.</li>
-                                    <li><i class="fa-solid fa-check"></i> Get a clinical breast exam every year, starting at age 25.</li>
-                                    <li><i class="fa-solid fa-check"></i> Starting at age 40, have a mammogram or tomosynthesis (3D mammogram screening) every year.</li>
+                                    <li><i class="fa-solid fa-check"></i> <span data-translate="average_risk_1">Starting at age 20, become familiar with how your breasts look and feel. Knowing your breasts will help you notice changes.</span></li>
+                                    <li><i class="fa-solid fa-check"></i> <span data-translate="average_risk_2">Get a clinical breast exam every year, starting at age 25.</span></li>
+                                    <li><i class="fa-solid fa-check"></i> <span data-translate="average_risk_3">Starting at age 40, have a mammogram or tomosynthesis (3D mammogram screening) every year.</span></li>
                                 </ul>
                                 <div class="risk-note">
-                                    <p><i class="fa-solid fa-info-circle"></i> If your mammogram shows you have dense breasts, your healthcare provider may recommend more screening tests. These can include an ultrasound.</p>
+                                    <p><i class="fa-solid fa-info-circle"></i> <span data-translate="average_risk_note">If your mammogram shows you have dense breasts, your healthcare provider may recommend more screening tests. These can include an ultrasound.</span></p>
                                 </div>
                             </div>
                         </div>
@@ -175,17 +192,17 @@
                         <div class="risk-card">
                             <div class="risk-header">
                                 <i class="fa-solid fa-exclamation-triangle"></i>
-                                <h3>Intermediate Risk</h3>
+                                <h3 data-translate="intermediate_risk_title">Intermediate Risk</h3>
                             </div>
                             <div class="risk-content">
                                 <ul class="risk-list">
-                                    <li><i class="fa-solid fa-check"></i> Starting at age 20, become familiar with how your breasts look and feel. Knowing your breasts will help you notice changes.</li>
-                                    <li><i class="fa-solid fa-check"></i> Starting at age 25, get a breast exam by your healthcare provider every 6 months.</li>
-                                    <li><i class="fa-solid fa-check"></i> If you have or had atypical hyperplasia (ADH) or lobular neoplasia, start getting screened at age 30. If you were diagnosed at age 30 or older, start getting screened at the time of diagnosis.</li>
-                                    <li><i class="fa-solid fa-check"></i> Get a mammogram or tomosynthesis every year.</li>
+                                    <li><i class="fa-solid fa-check"></i> <span data-translate="intermediate_risk_1">Starting at age 20, become familiar with how your breasts look and feel. Knowing your breasts will help you notice changes.</span></li>
+                                    <li><i class="fa-solid fa-check"></i> <span data-translate="intermediate_risk_2">Starting at age 25, get a breast exam by your healthcare provider every 6 months.</span></li>
+                                    <li><i class="fa-solid fa-check"></i> <span data-translate="intermediate_risk_3">If you have or had atypical hyperplasia (ADH) or lobular neoplasia, start getting screened at age 30. If you were diagnosed at age 30 or older, start getting screened at the time of diagnosis.</span></li>
+                                    <li><i class="fa-solid fa-check"></i> <span data-translate="intermediate_risk_4">Get a mammogram or tomosynthesis every year.</span></li>
                                 </ul>
                                 <div class="risk-note">
-                                    <p><i class="fa-solid fa-info-circle"></i> Your healthcare provider may recommend more imaging. This can include an ultrasound, contrast mammography, or an MRI, if you have dense breasts.</p>
+                                    <p><i class="fa-solid fa-info-circle"></i> <span data-translate="intermediate_risk_note">Your healthcare provider may recommend more imaging. This can include an ultrasound, contrast mammography, or an MRI, if you have dense breasts.</span></p>
                                 </div>
                             </div>
                         </div>
@@ -195,14 +212,14 @@
                         <div class="risk-card">
                             <div class="risk-header">
                                 <i class="fa-solid fa-triangle-exclamation"></i>
-                                <h3>High Risk</h3>
+                                <h3 data-translate="high_risk_title">High Risk</h3>
                             </div>
                             <div class="risk-content">
                                 <ul class="risk-list">
-                                    <li><i class="fa-solid fa-check"></i> Starting at age 20, have a breast exam every 6 months.</li>
-                                    <li><i class="fa-solid fa-check"></i> Have a mammogram or tomosynthesis every year, but no earlier than age 25. Start no later than 10 years before the youngest age that a close blood relative was diagnosed with cancer.</li>
-                                    <li><i class="fa-solid fa-check"></i> Have an MRI every year. Alternate with a mammogram every 6 months.</li>
-                                    <li><i class="fa-solid fa-check"></i> If you had radiation treatment, have your MRI, and mammogram or tomosynthesis, at the same time or every 6 months. Screening should start 8 years after radiation treatment.</li>
+                                    <li><i class="fa-solid fa-check"></i> <span data-translate="high_risk_1">Starting at age 20, have a breast exam every 6 months.</span></li>
+                                    <li><i class="fa-solid fa-check"></i> <span data-translate="high_risk_2">Have a mammogram or tomosynthesis every year, but no earlier than age 25. Start no later than 10 years before the youngest age that a close blood relative was diagnosed with cancer.</span></li>
+                                    <li><i class="fa-solid fa-check"></i> <span data-translate="high_risk_3">Have an MRI every year. Alternate with a mammogram every 6 months.</span></li>
+                                    <li><i class="fa-solid fa-check"></i> <span data-translate="high_risk_4">If you had radiation treatment, have your MRI, and mammogram or tomosynthesis, at the same time or every 6 months. Screening should start 8 years after radiation treatment.</span></li>
                                 </ul>
                             </div>
                         </div>
@@ -228,15 +245,15 @@
 
         <!-- ===== Share Your Question ===== -->
         <section id="ask-question" aria-labelledby="ask-question-title" style="padding-bottom: 0;">
-            <h2 id="ask-question-title">Share Your Question with Dr Chebl Azar</h2>
-            <p class="lead">Talk with Dr Chebl Azar and share your questions here.</p>
+            <h2 id="ask-question-title" data-translate="ask_question_title">Share Your Question with Dr Chebl Azar</h2>
+            <p class="lead" data-translate="ask_question_lead">Talk with Dr Chebl Azar and share your questions here.</p>
             
             <div class="question-form-container">
                 <div class="form-card">
                     <div class="form-header">
                         <i class="fa-solid fa-comment-medical"></i>
-                        <h3>Get Expert Advice</h3>
-                        <p>Have questions about your breast health? Dr. Chebl Azar is here to help with personalized guidance and support.</p>
+                        <h3 data-translate="get_expert_advice">Get Expert Advice</h3>
+                        <p data-translate="get_expert_desc">Have questions about your breast health? Dr. Chebl Azar is here to help with personalized guidance and support.</p>
                     </div>
                     
                     <div class="form-options">
@@ -245,8 +262,8 @@
                                 <i class="fa-brands fa-whatsapp"></i>
                             </div>
                             <div class="option-content">
-                                <h4>WhatsApp Consultation</h4>
-                                <p>Chat directly with Dr. Chebl Azar for immediate answers to your questions</p>
+                                <h4 data-translate="whatsapp_consultation">WhatsApp Consultation</h4>
+                                <p data-translate="whatsapp_desc">Chat directly with Dr. Chebl Azar for immediate answers to your questions</p>
                                 <p style="color: #25D366; font-weight: 500; margin-top: 0.5rem;">Click here</p>
                             </div>
                         </a>
@@ -256,8 +273,8 @@
                                 <i class="fa-solid fa-globe"></i>
                             </div>
                             <div class="option-content">
-                                <h4>Visit Our Website</h4>
-                                <p>Learn more about our services and book an appointment online</p>
+                                <h4 data-translate="visit_website">Visit Our Website</h4>
+                                <p data-translate="website_desc">Learn more about our services and book an appointment online</p>
                                 <p style="color: #e91e63; font-weight: 500; margin-top: 0.5rem;">Click here</p>
                             </div>
                         </a>
@@ -267,11 +284,12 @@
                                 <i class="fa-solid fa-comment-dots" style="color: white;"></i>
                             </div>
                             <div class="option-content">
-                                <h4>Ask a Question</h4>
-                                <p>Write your question and send it directly to Dr. Chebl Azar via WhatsApp</p>
+                                <h4 data-translate="ask_question_form">Ask a Question</h4>
+                                <p data-translate="question_form_desc">Write your question and send it directly to Dr. Chebl Azar via WhatsApp</p>
                                 <div class="question-form" style="margin-top: 1rem;">
                                     <textarea 
                                         id="questionText" 
+                                        data-translate-placeholder="question_placeholder"
                                         placeholder="Type your question here..." 
                                         rows="3" 
                                         style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: 8px; font-family: inherit; resize: vertical; margin-bottom: 0.5rem;"
@@ -282,7 +300,7 @@
                                             style="background: #007bff; color: white; border: none; padding: 0.75rem 1.5rem; border-radius: 8px; cursor: pointer; font-weight: 500; display: inline-flex; align-items: center; gap: 0.5rem;"
                                         >
                                             <i class="fa-brands fa-whatsapp"></i>
-                                            Send Question
+                                            <span data-translate="send_question">Send Question</span>
                                         </button>
                                     </div>
                                 </div>
@@ -307,17 +325,17 @@
 
         <!-- ===== Genetic Testing & New Tools ===== -->
         <section class="card" aria-labelledby="genetics-title" style="background:linear-gradient(180deg,#fff,#fff0fa); border:1px solid #ffe4f3">
-            <h2 id="genetics-title">Genetic Testing</h2>
+            <h2 id="genetics-title" data-translate="genetic_testing_title">Genetic Testing</h2>
             <div class="grid cols-1">
            
                 <div>
-                    <h3>MyHealthScore</h3>
-                    <p>Combine multiple genetic markers to refine risk assessment. New guidance (2025) supports PRS in clinical risk evaluation.</p>
+                    <h3 data-translate="myhealthscore_title">MyHealthScore</h3>
+                    <p data-translate="myhealthscore_desc">Combine multiple genetic markers to refine risk assessment. New guidance (2025) supports PRS in clinical risk evaluation.</p>
                 </div>
             </div>
             <div class="cta-row" style="margin-top:1rem; text-align:center;">
-                <a href="https://myhealthscore.vercel.app/" target="_blank" rel="noopener" class="btn btn-primary">Learn about Genetic Testing</a>
-                <a href="#" id="waGen" class="btn btn-wa"><i class="fa-brands fa-whatsapp"></i> Ask about Genetic Testing</a>
+                <a href="https://myhealthscore.vercel.app/" target="_blank" rel="noopener" class="btn btn-primary" data-translate="learn_genetic_testing">Learn about Genetic Testing</a>
+                <a href="#" id="waGen" class="btn btn-wa"><i class="fa-brands fa-whatsapp"></i> <span data-translate="ask_genetic_testing">Ask about Genetic Testing</span></a>
             </div>
         </section>
 
@@ -340,12 +358,12 @@
     <footer class="compliance" role="contentinfo">
         <div class="container" style="padding:1.25rem">
             <div style="display:flex; gap:1rem; align-items:flex-start; justify-content:space-between; flex-wrap:wrap">
-                <p style="margin:0; max-width:900px">
+                <p style="margin:0; max-width:900px" data-translate="footer_important">
                     <strong>Important:</strong> This page provides general educational information for Breast Cancer Awareness Month. It does not diagnose disease and does not replace professional medical advice. Screening timing and modality should be decided with your healthcare professional.
                 </p>
-                <a href="https://www.veritasint.com/privacy-policy/" target="_blank" rel="noopener" style="color:#fff">Privacy</a>
+                <a href="https://www.veritasint.com/privacy-policy/" target="_blank" rel="noopener" style="color:#fff" data-translate="privacy">Privacy</a>
             </div>
-            <div class="credits" style="margin-top:.6rem">
+            <div class="credits" style="margin-top:.6rem" data-translate="credits">
                 Images: Pink ribbon (Wikimedia Commons), Mammography illustration (NCI Public Domain).
             </div>
         </div>
@@ -356,6 +374,37 @@
     
     <script>
     document.addEventListener('DOMContentLoaded', function() {
+
+        // Language selector functionality
+        const languageSelector = document.querySelector('.language-selector');
+        const dropdownItems = document.querySelectorAll('.dropdown-item');
+        
+        if (languageSelector) {
+            // Toggle dropdown on click
+            languageSelector.addEventListener('click', function(e) {
+                e.stopPropagation();
+                languageSelector.classList.toggle('active');
+            });
+            
+            // Close dropdown when clicking outside
+            document.addEventListener('click', function(e) {
+                if (!languageSelector.contains(e.target)) {
+                    languageSelector.classList.remove('active');
+                }
+            });
+            
+            // Handle language selection
+            dropdownItems.forEach(item => {
+                item.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const lang = this.getAttribute('data-lang');
+                    if (lang && typeof changeLanguage === 'function') {
+                        changeLanguage(lang);
+                        languageSelector.classList.remove('active');
+                    }
+                });
+            });
+        }
 
         // Risk tabs functionality with smooth sliding animations
         const tabButtons = document.querySelectorAll('.tab-button');

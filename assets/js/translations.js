@@ -1,28 +1,92 @@
-// Translation data for myHealthScore pages
+// Translation data for DrCheblAzar breast clinic page
 const translations = {
     en: {
         // Navigation and common elements
         "language_selector": "Language",
         "english": "English",
         "arabic": "العربية",
-        "french": "Français",
         
-        // Index page
-        "hero_title_part1": "Know your hidden disease risks in",
-        "hero_title_part2": "one simple test",
-        "explore_cta": "Explore How This Test Can Help You",
-        "hero_subtitle": "myHealthScore is a simple genetic test that helps you understand your risk for common diseases like heart disease, diabetes, and certain cancers. It looks at many small changes in your DNA to uncover hidden risks that regular check-ups might miss.",
-        "choose_test_title": "Choose Your Test",
-        "choose_test_subtitle": "Select the appropriate test based on your gender to get personalized health insights.",
-        "womens_health_title": "Women's Health Test",
-        "womens_health_desc": "Comprehensive genetic screening for women, including breast cancer risk assessment and other female-specific health concerns.",
-        "mens_health_title": "Men's Health Test",
-        "mens_health_desc": "Personalized genetic screening for men, including prostate cancer risk assessment and other male-specific health concerns.",
-        "start_today": "Start Today",
-        "about_veritas_title": "About Veritas",
-        "about_veritas_p1": "Veritas Genetics is one of the world leaders in advanced genetic sequencing and clinical interpretation of the exome and whole genome, driving the transition to personalized and preventive medicine.",
-        "about_veritas_p2": "Using state-of-the-art technologies and the highest safety standards, Veritas Genetics helps individuals, healthcare professionals and institutions worldwide to understand and anticipate genetic risks, enabling more informed and proactive health decisions.",
-        "about_veritas_p3": "With a focus on innovation and accessibility, Veritas Genetics transforms the way we understand and care for health at every stage of life.",
+        // Hero Section
+        "hero_badge": "The Breast Clinic",
+        "hero_title": "We're here to support you with your breast health.",
+        "hero_description": "I'm here to empower you with education and support at every step along the way of your breast health journey. My goal is simple: find any risks of breast cancer early. That's why it's so important to follow a routine breast care plan for preventive care.",
+        "doctor_name": "Dr. Chebl Azar",
+        "doctor_title": "Breast & Reconstructive Surgeon, The Breast Clinic, Trad Hospital (Beirut)",
+        "book_appointment": "Book Your Appointment",
+        
+        // Routine Breast Care Section
+        "routine_care_title": "Routine Breast Care 3-Step Plan",
+        "routine_care_lead": "A comprehensive approach to preventive breast care that helps detect any changes early.",
+        "step1_title": "Breast Self-Awareness",
+        "step1_desc": "The American Cancer Society says that all women should get to know how their breasts normally look and feel. Doing this can help you notice any changes more easily.",
+        "step1_changes": "Changes to watch for:",
+        "step1_lump": "Lump",
+        "step1_discharge": "Leaky fluid (discharge) other than breastmilk",
+        "step1_swelling": "Swelling",
+        "step1_irritation": "Skin irritation or dimpling",
+        "step1_nipple": "Nipple problems (pain, redness, flaking, or turning inward)",
+        "step1_warning": "See your healthcare provider right away if you notice any of these changes.",
+        
+        "step2_title": "Clinical Breast Exam (CBE)",
+        "step2_desc": "Your physical exam should include a clinical breast exam (CBE) by a healthcare provider or nurse trained to check breast problems.",
+        "step2_recommendation": "The American College of Obstetricians and Gynecologists recommends:",
+        "step2_age29_39": "Between ages 29 and 39, women should have a CBE by a healthcare provider every 1 to 3 years.",
+        "step2_age40": "After age 40, women should have a breast exam by a healthcare provider every year.",
+        
+        "step3_title": "Mammogram",
+        "step3_desc": "A mammogram is a low-dose X-ray of your breasts. It's the most common imaging test. A mammogram can find cancer or other problems early, before a lump can be felt. It can also help diagnose other breast problems.",
+        "step3_lebanese": "The Lebanese Ministry of Public Health recommends mammograms yearly starting from the age of 40.",
+        "step3_risk_factors": "Talk with your healthcare provider about your own personal risk factors. This will help you decide when to start getting mammograms and how often to have them.",
+        "step3_mri": "Depending on the level of risk, a breast MRI may also be done along with mammograms.",
+        
+        // Personalized Screening Plan
+        "screening_plan_title": "Personalized Screening Plan for Breast Cancer that Saves the Most Lives",
+        "screening_plan_lead": "The type of screening you have and your screening schedule are based on your personal risk for breast cancer. At the breast clinic, personalized monitoring is provided based on individual risk assessments. This ensures tailored care and surveillance for each patient.",
+        
+        "average_risk_title": "Average Risk",
+        "average_risk_1": "Starting at age 20, become familiar with how your breasts look and feel. Knowing your breasts will help you notice changes.",
+        "average_risk_2": "Get a clinical breast exam every year, starting at age 25.",
+        "average_risk_3": "Starting at age 40, have a mammogram or tomosynthesis (3D mammogram screening) every year.",
+        "average_risk_note": "If your mammogram shows you have dense breasts, your healthcare provider may recommend more screening tests. These can include an ultrasound.",
+        
+        "intermediate_risk_title": "Intermediate Risk",
+        "intermediate_risk_1": "Starting at age 20, become familiar with how your breasts look and feel. Knowing your breasts will help you notice changes.",
+        "intermediate_risk_2": "Starting at age 25, get a breast exam by your healthcare provider every 6 months.",
+        "intermediate_risk_3": "If you have or had atypical hyperplasia (ADH) or lobular neoplasia, start getting screened at age 30. If you were diagnosed at age 30 or older, start getting screened at the time of diagnosis.",
+        "intermediate_risk_4": "Get a mammogram or tomosynthesis every year.",
+        "intermediate_risk_note": "Your healthcare provider may recommend more imaging. This can include an ultrasound, contrast mammography, or an MRI, if you have dense breasts.",
+        
+        "high_risk_title": "High Risk",
+        "high_risk_1": "Starting at age 20, have a breast exam every 6 months.",
+        "high_risk_2": "Have a mammogram or tomosynthesis every year, but no earlier than age 25. Start no later than 10 years before the youngest age that a close blood relative was diagnosed with cancer.",
+        "high_risk_3": "Have an MRI every year. Alternate with a mammogram every 6 months.",
+        "high_risk_4": "If you had radiation treatment, have your MRI, and mammogram or tomosynthesis, at the same time or every 6 months. Screening should start 8 years after radiation treatment.",
+        
+        // Question Section
+        "ask_question_title": "Share Your Question with Dr Chebl Azar",
+        "ask_question_lead": "Talk with Dr Chebl Azar and share your questions here.",
+        "get_expert_advice": "Get Expert Advice",
+        "get_expert_desc": "Have questions about your breast health? Dr. Chebl Azar is here to help with personalized guidance and support.",
+        "whatsapp_consultation": "WhatsApp Consultation",
+        "whatsapp_desc": "Chat directly with Dr. Chebl Azar for immediate answers to your questions",
+        "visit_website": "Visit Our Website",
+        "website_desc": "Learn more about our services and book an appointment online",
+        "ask_question_form": "Ask a Question",
+        "question_form_desc": "Write your question and send it directly to Dr. Chebl Azar via WhatsApp",
+        "question_placeholder": "Type your question here...",
+        "send_question": "Send Question",
+        
+        // Genetic Testing
+        "genetic_testing_title": "Genetic Testing",
+        "myhealthscore_title": "MyHealthScore",
+        "myhealthscore_desc": "Combine multiple genetic markers to refine risk assessment. New guidance (2025) supports PRS in clinical risk evaluation.",
+        "learn_genetic_testing": "Learn about Genetic Testing",
+        "ask_genetic_testing": "Ask about Genetic Testing",
+        
+        // Footer
+        "footer_important": "Important: This page provides general educational information for Breast Cancer Awareness Month. It does not diagnose disease and does not replace professional medical advice. Screening timing and modality should be decided with your healthcare professional.",
+        "privacy": "Privacy",
+        "credits": "Images: Pink ribbon (Wikimedia Commons), Mammography illustration (NCI Public Domain).",
         
         // Common elements
         "whatsapp_message": "Hi, I am interested in your myHealthScore test. How can I start?",
@@ -276,7 +340,97 @@ const translations = {
         "language_selector": "اللغة",
         "english": "English",
         "arabic": "العربية",
-        "french": "Français",
+        
+        // Hero Section
+        "hero_badge": "عيادة الثدي",
+        "hero_title": "نحن هنا لدعمك في صحة ثدييك.",
+        "hero_description": "أنا هنا لتمكينك بالمعرفة والدعم في كل خطوة من رحلتك مع صحة الثدي. هدفي بسيط: اكتشاف أي مخاطر لسرطان الثدي مبكرًا. لذلك من المهم جدًا اتباع خطة رعاية روتينية للثدي كجزء من الوقاية.",
+        "doctor_name": "د. شبل عازار",
+        "doctor_title": "جرّاح الثدي والترميم، عيادة الثدي، مستشفى تراد (بيروت)",
+        "book_appointment": "احجزي موعدك",
+        
+        // Routine Breast Care Section
+        "routine_care_title": "خطة العناية الروتينية بالثدي من 3 خطوات",
+        "routine_care_lead": "نهج شامل للعناية الوقائية بالثدي يساعد في اكتشاف أي تغييرات مبكرًا.",
+        "step1_title": "الوعي الذاتي بالثدي",
+        "step1_desc": "توصي الجمعية الأمريكية للسرطان بأن تتعرّف جميع النساء على الشكل والإحساس الطبيعيين لثدييهن. فهذا يساعدك على ملاحظة أي تغيّرات بسهولة أكبر.",
+        "step1_changes": "تغيّرات يُنصح بمراقبتها:",
+        "step1_lump": "كتلة (ورم صغير/تحجّر)",
+        "step1_discharge": "سائل متسرّب (إفرازات) غير حليب الثدي",
+        "step1_swelling": "تورّم",
+        "step1_irritation": "تهيّج أو تجعّد/تنقير في الجلد",
+        "step1_nipple": "مشاكل بالحلمة (ألم، احمرار، تقشّر، أو انقلاب للداخل)",
+        "step1_warning": "راجعي مقدّم الرعاية الصحية فورًا إذا لاحظتِ أيًا من هذه التغيّرات.",
+        
+        "step2_title": "الفحص السريري للثدي (CBE)",
+        "step2_desc": "يجب أن يشمل فحصك الجسدي فحصًا سريريًا للثدي (CBE) يجريه طبيب أو ممرضة مدرّبة على تقصّي مشاكل الثدي.",
+        "step2_recommendation": "توصي الكلية الأمريكية لأطباء النساء والتوليد بما يلي:",
+        "step2_age29_39": "بين سن 29 و39 عامًا: تجري المرأة فحصًا سريريًا للثدي كل 1 إلى 3 سنوات.",
+        "step2_age40": "بعد سن 40 عامًا: تجري المرأة فحص الثدي لدى مقدّم الرعاية الصحية كل سنة.",
+        
+        "step3_title": "الماموغرام (تصوير الثدي الشعاعي)",
+        "step3_desc": "الماموغرام هو صورة أشعة سينية منخفضة الجرعة للثدي، وهو أكثر فحوصات التصوير شيوعًا. يمكنه اكتشاف السرطان أو مشكلات أخرى مبكرًا قبل أن تُحَسّ الكتلة، كما يساعد في تشخيص مشاكل الثدي الأخرى.",
+        "step3_lebanese": "توصي وزارة الصحة العامة اللبنانية بإجراء الماموغرام سنويًا ابتداءً من سن الأربعين.",
+        "step3_risk_factors": "تحدّثي مع مقدّم الرعاية الصحية حول عوامل الخطورة الشخصية لديكِ. سيساعدك ذلك على تحديد موعد بدء الماموغرام وعدد مرات تكراره.",
+        "step3_mri": "بحسب مستوى الخطورة، قد يُجرى أيضًا تصوير بالرنين المغناطيسي للثدي بالتوازي مع الماموغرام.",
+        
+        // Personalized Screening Plan
+        "screening_plan_title": "خطة تحرّي سرطان الثدي المخصّصة",
+        "screening_plan_lead": "نوع الفحص وجدولك الزمني يعتمدان على مخاطر سرطان الثدي الشخصية لديكِ. في عيادة الثدي، نقدّم مراقبة مخصّصة بناءً على تقييمات المخاطر الفردية. هذا يضمن رعاية ومراقبة مخصصة لكل مريضة.",
+        
+        "average_risk_title": "خطورة متوسّطة",
+        "average_risk_1": "ابتداءً من سن 20 عامًا، تعرّفي على شكل ثدييكِ وإحساسهما الطبيعي. فمعرفة ثدييك تساعدك على ملاحظة التغيّرات.",
+        "average_risk_2": "ابتداءً من سن 25 عامًا، أجري فحصًا سريريًا للثدي كل سنة.",
+        "average_risk_3": "ابتداءً من سن 40 عامًا، أجري ماموغرامًا أو تصوير التوموسينثيس (تصوير شعاعي ثلاثي الأبعاد للثدي) كل سنة.",
+        "average_risk_note": "إذا أظهر الماموغرام أن لديكِ كثافة مرتفعة في نسيج الثدي، فقد يوصي مقدّم الرعاية الصحية بفحوصات إضافية مثل الموجات فوق الصوتية (الألتراساوند).",
+        
+        "intermediate_risk_title": "خطورة متوسّطة مرتفعة",
+        "intermediate_risk_1": "ابتداءً من سن 20 عامًا، تعرّفي على شكل ثدييكِ وإحساسهما الطبيعي لملاحظة أي تغيّر.",
+        "intermediate_risk_2": "ابتداءً من سن 25 عامًا، أجري فحص ثدي لدى مقدّم الرعاية كل 6 أشهر.",
+        "intermediate_risk_3": "إذا كان لديكِ أو كان لديكِ سابقًا فرط تنسّج غير نمطي (ADH) أو تبدّل/ورم فصيصي (lobular neoplasia)، ابدئي الفحوصات ابتداءً من سن 30. وإذا شُخِّصتِ في سن 30 أو بعدها، فابدئي الفحوصات وقت التشخيص.",
+        "intermediate_risk_4": "أجري ماموغرامًا أو توموسينثيس كل سنة.",
+        "intermediate_risk_note": "قد يوصي مقدّم الرعاية بتصوير إضافي، مثل الألتراساوند، أو تصوير الثدي الشعاعي مع التباين، أو التصوير بالرنين المغناطيسي، خاصةً إذا كانت كثافة نسيج الثدي مرتفعة.",
+        
+        "high_risk_title": "خطورة عالية",
+        "high_risk_1": "ابتداءً من سن 20 عامًا، أجري فحص الثدي كل 6 أشهر.",
+        "high_risk_2": "أجري ماموغرامًا أو توموسينثيس كل سنة، ولكن ليس قبل سن 25 عامًا. وابدئي في موعد لا يتجاوز 10 سنوات قبل أصغر سنّ شُخِّص فيه أحد الأقارب من الدرجة الأولى بالسرطان.",
+        "high_risk_3": "أجري تصويرًا بالرنين المغناطيسي كل سنة. وبدّلي بينه وبين الماموغرام كل 6 أشهر.",
+        "high_risk_4": "إذا كنتِ قد خضعتِ لعلاج إشعاعي سابقًا، فأجري الرنين المغناطيسي والماموغرام/التوموسينثيس في الوقت نفسه أو بالتناوب كل 6 أشهر. ويجب أن يبدأ التحري بعد 8 سنوات من العلاج الإشعاعي.",
+        
+        // Question Section
+        "ask_question_title": "شاركي سؤالك مع د. شبل عازار",
+        "ask_question_lead": "تحدّثي مع د. شبل عازار وشاركي أسئلتك هنا.",
+        "get_expert_advice": "احصلي على نصيحة خبيرة",
+        "get_expert_desc": "هل لديكِ أسئلة حول صحة الثدي؟ د. شبل عازار هنا للمساعدة بتوجيه شخصي ودعم ملائم لكِ.",
+        "whatsapp_consultation": "استشارة عبر واتساب",
+        "whatsapp_desc": "تواصلي مباشرةً مع د. شبل عازار للحصول على إجابات فورية لأسئلتك",
+        "visit_website": "زيارة موقعنا الإلكتروني",
+        "website_desc": "تعرّفي أكثر إلى خدماتنا واحجزي موعدًا عبر الإنترنت",
+        "ask_question_form": "اطرحي سؤالًا",
+        "question_form_desc": "اكتبي سؤالك وأرسليه مباشرةً إلى د. شبل عازار عبر واتساب",
+        "question_placeholder": "اكتبي سؤالك هنا...",
+        "send_question": "أرسلي السؤال",
+        
+        // Genetic Testing
+        "genetic_testing_title": "الفحوصات الجينية",
+        "myhealthscore_title": "MyHealthScore",
+        "myhealthscore_desc": "نجمع عدّة مؤشرات جينية لتحسين تقدير المخاطر. التوجيهات الحديثة (2025) تدعم استخدام نقاط المخاطر متعددة الجينات (PRS) ضمن التقييم السريري للمخاطر.",
+        "learn_genetic_testing": "التعرّف إلى الفحوصات الجينية",
+        "ask_genetic_testing": "الاستفسار عن الفحوصات الجينية",
+        
+        // Footer
+        "footer_important": "مهم: توفّر هذه الصفحة معلومات تثقيفية عامة بمناسبة شهر التوعية بسرطان الثدي. وهي لا تشخّص الأمراض ولا تُغني عن الاستشارة الطبية المتخصّصة. يجب تحديد توقيت ونوع التحري بالاتفاق مع مقدّم الرعاية الصحية الخاص بكِ.",
+        "privacy": "الخصوصية",
+        "credits": "الصور: الشريط الوردي (ويكيميديا كومنز)، رسم توضيحي للماموغرافيا (NCI نطاق عام).",
+        
+        // Common elements
+        "whatsapp_message": "مرحباً، أنا مهتم بفحص myHealthScore. كيف يمكنني البدء؟",
+        "whatsapp_float_message": "مرحباً! أريد معرفة المزيد عن myHealthScore.",
+        "share_whatsapp": "واتساب",
+        "share_facebook": "فيسبوك",
+        "share_telegram": "تليجرام",
+        "copy_link": "نسخ الرابط",
+        "link_copied": "تم نسخ الرابط",
         
         // Index page
         "hero_title_part1": "اعرف مخاطر الأمراض الخفية في",
@@ -845,6 +999,15 @@ function changeLanguage(lang) {
         }
     });
     
+    // Update placeholder attributes
+    const placeholderElements = document.querySelectorAll('[data-translate-placeholder]');
+    placeholderElements.forEach(element => {
+        const key = element.getAttribute('data-translate-placeholder');
+        if (translations[lang] && translations[lang][key]) {
+            element.placeholder = translations[lang][key];
+        }
+    });
+    
     // Update page direction for Arabic
     if (lang === 'ar') {
         document.documentElement.dir = 'rtl';
@@ -853,15 +1016,6 @@ function changeLanguage(lang) {
         document.documentElement.dir = 'ltr';
         document.body.classList.remove('rtl');
     }
-    
-    // Skip updating language selector display - we want to keep the earth icon and abbreviations
-    // const languageSelector = document.querySelector('.language-selector');
-    // if (languageSelector) {
-    //     const selectedText = languageSelector.querySelector('.selected-text');
-    //     if (selectedText) {
-    //         selectedText.textContent = translations[lang]['language_selector'];
-    //     }
-    // }
     
     // Store language preference
     localStorage.setItem('preferredLanguage', lang);

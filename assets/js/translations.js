@@ -249,7 +249,7 @@ const translations = {
         "whatsapp_clinic": "WhatsApp the Clinic",
         "clinical_support_title": "Clinical Support",
         "clinical_support_lead": "This campaign is supported by [Dr. Name], Consultant in Oncology & Women's Health. Dr. [Name] promotes evidence-based prevention and early detection, helping patients understand screening schedules, lifestyle steps, and the role of genetics.",
-        "doctor_name": "Dr. [Name]",
+        "doctor_name": "Dr. Chebl Azar",
         "doctor_description": "Consultant in Oncology & Women's Health focused on evidence-based prevention and early detection protocols. Specializes in helping patients understand personalized screening schedules, lifestyle interventions, and genetic risk assessment.",
         "doctor_qualification_1": "Board-certified in Medical Oncology and Women's Health",
         "doctor_qualification_2": "Evidence-based approach to prevention and screening",
